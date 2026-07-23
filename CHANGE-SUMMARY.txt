@@ -1,0 +1,24 @@
+HACKSAW WEBSITE REFRESH — 2026-07-24
+
+Core policy changes
+- Perk-bearing payments are described as digital support purchases, not donations.
+- Amethyst is consistently £20+.
+- All rank thresholds are cumulative: £20, £50, £100, £150, £250, £500, £1,000, £2,000.
+- Every £1 awards 100 cosmetic HS Tokens.
+- Every individual purchase of £20+ adds 30 days of Priority Queue.
+- Refunded/reversed payments reduce the net Lifetime Support Total and related benefits may be adjusted.
+- Bohemia approval is clearly separated from ownership/operation.
+
+Evidence-hardening features
+- Versioned Support Terms (2026-07-24).
+- Dedicated Privacy Notice.
+- Calculator for tokens, cumulative total, rank and newly crossed thresholds.
+- Pre-payment confirmation generator for Discord tickets.
+- Confirmation includes an acknowledgement ID, UTC timestamp, Discord ID, Steam ID64, payment method, amount, current/new cumulative total, expected rank, tokens and Priority Queue.
+- Clear warning that browser acknowledgement is not stored until pasted into Discord.
+
+Technical refresh
+- Fully responsive modern dark visual design.
+- No runtime dependency on Bootstrap, jQuery, Google Fonts or the old template scripts.
+- Mobile navigation and accessible focus/skip-link support.
+- Vercel security headers, robots.txt and sitemap.xml.

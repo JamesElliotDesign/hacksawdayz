@@ -1,24 +1,39 @@
-HACKSAW WEBSITE REFRESH — 2026-07-24
+HACKSAW DAYZ EXPERIENCE REFRESH
+===============================
 
-Core policy changes
-- Perk-bearing payments are described as digital support purchases, not donations.
-- Amethyst is consistently £20+.
-- All rank thresholds are cumulative: £20, £50, £100, £150, £250, £500, £1,000, £2,000.
-- Every £1 awards 100 cosmetic HS Tokens.
-- Every individual purchase of £20+ adds 30 days of Priority Queue.
-- Refunded/reversed payments reduce the net Lifetime Support Total and related benefits may be adjusted.
-- Bohemia approval is clearly separated from ownership/operation.
+Major updates
+-------------
+- Rebuilt the home page around the actual Hacksaw experience rather than leading with compliance language.
+- Added the new hero and tagline: "Take back the Capital. Survive what comes next."
+- Added server identity sections covering progression, AI factions, Chernarus, Takistan, Radio Zenit, Capital Customs, crafting and community services.
+- Added an interactive Chernarus / Takistan switcher.
+- Added a cinematic image gallery using the supplied in-game screenshots.
+- Added Open Graph and Twitter share metadata to every page.
+- Added img/hacksaw-share.jpg as the 1200 x 630 social share image.
+- Renamed the Community navigation item to Experience while retaining community.html for existing links.
 
-Evidence-hardening features
-- Versioned Support Terms (2026-07-24).
-- Dedicated Privacy Notice.
-- Calculator for tokens, cumulative total, rank and newly crossed thresholds.
-- Pre-payment confirmation generator for Discord tickets.
-- Confirmation includes an acknowledgement ID, UTC timestamp, Discord ID, Steam ID64, payment method, amount, current/new cumulative total, expected rank, tokens and Priority Queue.
-- Clear warning that browser acknowledgement is not stored until pasted into Discord.
+Rules
+-----
+- Replaced the old short rules summary with a structured rules hub.
+- Added current summaries for conduct, PvE/player damage, POI claiming, grace and cooldowns, base upkeep, codelocks, vehicles, CAR repo, safe zones, gifting, compensation, Takistan, staff support and offence outcomes.
+- Kept a prominent notice that Discord is authoritative for current rules and clarifications.
 
-Technical refresh
-- Fully responsive modern dark visual design.
-- No runtime dependency on Bootstrap, jQuery, Google Fonts or the old template scripts.
-- Mobile navigation and accessible focus/skip-link support.
-- Vercel security headers, robots.txt and sitemap.xml.
+Support page
+------------
+- Removed the old browser-based "Documented support flow" form.
+- Replaced it with the current automated Discord bot workflow.
+- The workflow now tells players to retain their transaction ID/reference and provide Steam ID64 when not linked.
+- Retained the cumulative rank calculator and rank cards.
+- Kept the existing Support Terms, Privacy Notice and monetisation policy content intact.
+
+Visual and technical changes
+----------------------------
+- Added 16 optimised WebP gameplay images under img/experience/.
+- Added new component styles for progression, map switching, radio, lore tiers, rules accordions, bot receipts and cinematic galleries.
+- Updated navigation and footer language across all pages.
+- Preserved Vercel clean URLs, CSP/security headers, sitemap and robots.txt.
+
+MAP SWITCHER FIX
+- Ensures inactive Chernarus/Takistan panels are hidden even when the panel grid CSS is active.
+- Re-initialises the selected panel when JavaScript loads.
+- Adds Left/Right/Home/End keyboard navigation and accurate ARIA state.

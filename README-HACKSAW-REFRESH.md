@@ -1,44 +1,70 @@
-# Hacksaw DayZ website refresh
+# Hacksaw DayZ website - experience refresh
 
-This archive contains a modernised static website with consistent supporter-programme wording.
+This is the complete static site, ready for the existing Vercel/GitHub deployment.
 
-## Key changes
+## What changed
 
-- Reclassifies perk-bearing payments as **digital support purchases**, not donations.
-- Sets Amethyst consistently at **£20+**.
-- Uses one cumulative rank table: £20, £50, £100, £150, £250, £500, £1,000 and £2,000.
-- Defines the **Lifetime Support Total** as net completed purchases after refunds/reversals.
-- Adds an independent-server disclosure throughout the site.
-- Adds a support calculator and a pre-payment ticket-confirmation generator.
-- Adds dedicated Support Terms and Privacy Notice pages.
-- Modernises all existing pages and removes reliance on the old Bootstrap/jQuery template at runtime.
+The site now presents Hacksaw as a fully custom AI-focused progressive PvE server first. Compliance and support information remain available, but they no longer dominate the home page.
 
-## Important evidence limitation
+The refresh uses the supplied in-game screenshots and server information to introduce:
 
-The pre-payment confirmation generator runs only in the player's browser. It does **not** save anything by itself. The player must paste the generated confirmation into a Discord ticket before payment. For stronger evidence, the Discord bot or a checkout backend should save:
-
-- terms version and exact package/rules snapshot;
-- Discord user ID and Steam ID64;
-- amount, currency, payment provider and transaction ID;
-- the confirmation timestamp;
-- delivery and subsequent usage records.
+- Long-form progression from fresh spawn to Takistan
+- Five Chernarus AI tiers and the T6 Serpents
+- Radio Zenit
+- Capital Customs
+- Custom crafting, licences and production systems
+- Community services including Camp Lesnoy, Training Centre, KC-10 and CAR
+- Updated rule summaries
+- The automated Discord support workflow
 
 ## Deployment
 
-The site remains plain static HTML/CSS/JavaScript and can be deployed to Vercel as before. Upload the contents of this directory with `index.html` at the project root.
+1. Back up the current GitHub branch or create a backup branch.
+2. Copy the contents of `hacksawdayz-main` into the local repository root.
+3. Review the changes:
 
-## Files added
+   ```powershell
+   git status
+   git diff --stat
+   ```
 
-- `css/site.css`
-- `js/site.js`
+4. Commit and push:
+
+   ```powershell
+   git add .
+   git commit -m "Refresh Hacksaw experience, rules and support flow"
+   git push origin main
+   ```
+
+5. Watch the Vercel deployment and test:
+   - Home page at desktop and mobile widths
+   - Experience page and Chernarus/Takistan switcher
+   - Rules accordions and Discord links
+   - Support calculator and payment-channel links
+   - Social sharing preview after the deployment cache refreshes
+
+## Social share image
+
+The social image is:
+
+`img/hacksaw-share.jpg`
+
+All pages reference the absolute URL:
+
+`https://hacksawdayz.vercel.app/img/hacksaw-share.jpg`
+
+Discord, Facebook and other services may cache the previous preview. A new URL query string or the platform's sharing debugger can force a refresh.
+
+## Content authority
+
+The website is a public summary. Discord remains authoritative for live rules, announcements, ticket procedures, map restrictions and staff clarifications.
+
+## Legal/support pages
+
+The substantive content in these pages was preserved:
+
+- `monetization.html`
 - `support-terms.html`
 - `privacy.html`
 
-The old template assets remain in the archive but are no longer loaded by the new pages.
-
-## Review before publishing
-
-- Confirm the five Discord channel links still map to PayPal, Revolut, bank transfer, crypto and Ko-fi.
-- Confirm the Discord Server Boost treatment is exactly: one non-stackable £3.50 rank-progress credit, with no tokens or priority queue.
-- Confirm higher-rank benefits and custom-skin wording reflect current server operations.
-- Have the Support Terms and Privacy Notice reviewed by a UK-qualified professional if they will be relied upon as formal consumer terms.
+Their navigation, metadata and footer were updated to match the refreshed site.
